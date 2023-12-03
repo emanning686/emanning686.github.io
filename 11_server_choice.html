@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cancer Report</title>
+        <style>
+            .container{
+                text-align: center;
+                margin:0 auto;
+                display:block;
+                background-color:white;
+                width:750px;
+            }
+            .label1{
+                background-color:lightgrey;
+                width: 400px;
+                text-align: center;
+                display:block;
+                margin:0 auto;
+                border:2px solid black;
+                border-radius: 7px;
+                margin-bottom: 20px;
+            }
+            .label2{
+                background-color:cornflowerblue;
+                width: 150px;
+                text-align: center;
+                display:block;
+                margin:0 auto;
+                border:2px solid black;
+                border-radius: 10px;
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+            .server{
+                display: inline-flex;
+                align-items: center;
+                margin: 20px;
+            }
+            body{
+                background-color:cornflowerblue;
+            }
+            h1{
+                text-align: center;
+                margin:0 auto;
+                display:block;
+            }
+            input.checkbox{
+                width: 30px;
+                height: 30px;
+                vertical-align: bottom;
+                position: relative;
+                top: -10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Server Choice</h1>
+            <div class="label1">
+                <label>Choose closest server for optimized performance</label>
+            </div>
+            <div class="server">
+                <input type="checkbox" class="checkbox">
+                <div class="label2">
+                    <label>Server 1</label>
+                </div>
+            </div>
+            <div class="server">
+                <input type="checkbox" class="checkbox">
+                <div class="label2">
+                    <label>Server 2</label>
+                </div>
+            </div>
+            <div class="server">
+                <input type="checkbox" class="checkbox">
+                <div class="label2">
+                    <label>Server 3</label>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

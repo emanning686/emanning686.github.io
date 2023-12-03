@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {text-align:center}
+            p1 {font-size:120%;position:relative;top:12px}
+            .center {margin-left: auto;margin-right: auto}
+            .switch{position:relative;display:inline-block;width:80px;height:45px}
+            .slider{position: absolute;cursor: pointer;top: 0;left: 0;right: 0;bottom: 0;background-color: lightgrey;transition: .4s;border-radius: 23px}
+            .slider:before {position: absolute;content: "";height: 35px;width: 35px;left: 6px;bottom: 6px;background-color: white;transition: .4s;border-radius: 50%}
+            input:checked + .slider {background-color: dodgerblue}
+            input:checked + .slider:before {transform: translateX(33.5px)}
+            .button {padding:5px 25px;font-size:16px;transition-duration:0.4s;cursor:pointer;border-radius:12px}
+            .button1:hover {background-color:dodgerblue;color:white}            
+        </style>
+    </head>
+    <body>
+        <h1>Settings</h1>
+
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+        <p1>&nbsp High Contrast Mode</p1>
+        
+        <br><br>
+        
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+        <p1>&nbsp Larger Font Size &nbsp&nbsp&nbsp&nbsp&nbsp</p1>
+
+        <br><br><br><br>
+        
+        <p1>Account<br><br></p1>
+        <table style="table-layout: fixed; width: 75%;border-spacing: 40px 10px;" class="center">
+            <tr>
+                <td><button class="button button1">Reset Email Address</button></td>
+                <td><button class="button button1">Reset Password</button></td>
+                <td><button class="button button1">Reset Username</button></td>
+            </tr>
+        </table>
+        
+        <br><br>
+        
+        <p1>Verification<br><br></p1>
+        <table style="table-layout: fixed; width: 75%;border-spacing: 40px 10px;" class="center">
+            <tr>
+                <td><button class="button button1">Scientific Researcher Validation</button></td>
+                <td><button class="button button1">Medical Professional Validation</button></td>
+            </tr>
+        </table>
+    </body>
+</html> 
