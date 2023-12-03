@@ -8,10 +8,13 @@
             .switch{position:relative;display:inline-block;width:80px;height:45px}
             .slider{position: absolute;cursor: pointer;top: 0;left: 0;right: 0;bottom: 0;background-color: lightgrey;transition: .4s;border-radius: 23px}
             .slider:before {position: absolute;content: "";height: 35px;width: 35px;left: 6px;bottom: 6px;background-color: white;transition: .4s;border-radius: 50%}
-            input:checked + .slider {background-color: dodgerblue}
+            input:checked + .slider {background-color: #34bdeb;}
             input:checked + .slider:before {transform: translateX(33.5px)}
             .button {padding:5px 25px;font-size:16px;transition-duration:0.4s;cursor:pointer;border-radius:12px}
-            .button1:hover {background-color:dodgerblue;color:white}            
+            .button1:hover {background-color:#34bdeb;color:white}  
+            body {
+                background-image: url('SWEN_back_left.jpg');
+            }          
         </style>
     </head>
     <body>
@@ -47,8 +50,12 @@
         <p1>Verification<br><br></p1>
         <table style="table-layout: fixed; width: 75%;border-spacing: 40px 10px;" class="center">
             <tr>
-                <td><button class="button button1">Scientific Researcher Validation</button></td>
-                <td><button class="button button1">Medical Professional Validation</button></td>
+                <a href="3_scientific_researchers.html">
+                    <td><button class="button button1">Scientific Researcher Validation</button></td>
+                </a>
+                <a href="4_medical_proffesional_verification.html">
+                    <td><button class="button button1">Medical Professional Validation</button></td>
+                </a>
             </tr>
         </table>
     </body>
